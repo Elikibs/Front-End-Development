@@ -1,82 +1,89 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-const { useState, useEffect, useRef } = React;
-const clientID = "t-FQWYk2PUt13LidWIblzu7SNd9HVOQsK3QA7Lg1Mg4";
-const utm = "?utm_source=scrimba_degree&utm_medium=referral"
-var API_KEY = 'NpRvp4rxQt7jYkbu95fWvCMrZKxyQKlWcNZfzeopGfI';
+// Challenge 2:
+// Replace the arguments below according to your preference.
+
+// space, scary, military, romantic, cowboy, fantasy, superhero
+favouriteMovieGenre("regular")
+
+// watermelon, tomato, banana, orange, avocado, blueberry
+favouriteFruit("regular")
+
+// light, dark
+favouriteMode("light")
+
+// sharp, soft, round
+favouriteEdgeStyle("sharp")
 
 
-const loadData = (options) => {
-  fetch(options.url)
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(data){ 
-       if (options.onSuccess) options.onSuccess(data)
-    })
+
+////////////////////////////////////
+// IGONE THE CODE BELOW THIS LINE //
+////////////////////////////////////
+
+function setProp(prop, value) {
+    document.documentElement.style.setProperty(prop, value)
 }
 
-const App = (props) => {
-  let [photos, setPhotos] = useState([]);
-  
-  // CHALLENGE:
-  // Change the query to one of your interests
-  let [query, setQuery] = useState("vampires");
-  const queryInput = useRef(null);
+function favouriteEdgeStyle(style) {
+    setProp("--image", "var(--" + style + ")");
+}
 
-  const numberOfPhotos = 20;
-  const url =
-    "https://api.unsplash.com/photos/random/?count=" +
-    numberOfPhotos +
-    "&client_id=" +
-    clientID;
+function favouriteMovieGenre(font) {
+    if (font) {
+        setProp("--font", "var(--" + font + ")");    
+    }
+}
 
-  useEffect(() => {
-    const photosUrl = query ? `${url}&query=${query}` : url;
+function favouriteMode(mode) {
+    if (mode === "light" || !mode) {
+        setProp('--background', "var(--light)");
+        setProp('--text', "var(--dark)");
+    } else if (mode === "dark") {
+        setProp('--background', "var(--dark)");
+        setProp('--text', "var(--light)");
+    }
+}
 
-    loadData({
-      url: photosUrl,
-      onSuccess: res => {
-        setPhotos(res);
-      }
-    });
-  }, [query, url]);
+function favouriteFruit(theme) {
+    if (theme === "pastel") {
+        setProp('--light', "#f2f6c3")
+        setProp('--dark', "#68c4af")
+    } else if (theme === "muted") {
+        setProp('--light', "#4c5b64")
+        setProp('--dark', "#45241c")
+    } else if (theme === "love") {
+        setProp('--light', "#f06836")
+        setProp('--dark', "#ba0001")
+    } else if (theme === "sky") {
+        setProp('--light', "#99ccff")
+        setProp('--dark', "#3366ff")
+    } else if (theme === "forrest") {
+        setProp('--light', "#91B247")
+        setProp('--dark', "#597C2B")
+    }  else if (theme === "shiny") {
+        setProp('--light', "#2e9afe")
+        setProp('--dark', "#02197c")
+    } else if (theme === "banana") {
+        setProp('--light', "#fbec5d")
+        setProp('--dark', "#6b3e26")
+    } else if (theme === "watermelon") {
+        setProp('--light', "#75b855")
+        setProp('--dark', "#ad3838")
+    } else if (theme === "tomato") {
+        setProp('--light', "#d62e2e")
+        setProp('--dark', "#600000")
+    } else if (theme === "avocado") {
+        setProp('--light', "#6b8c21")
+        setProp('--dark', "#704012")
+    } else if (theme === "orange") {
+        setProp('--light', "#ffca16")
+        setProp('--dark', "#f97300")
+    } else if (theme === "blueberry") {
+        setProp('--light', "#41a8f9")
+        setProp('--dark', "#064490")
+    } else  {
+        setProp('--light', "#f5f5f5")
+        setProp('--dark', "#222222")
+    } 
+}
 
-  const searchPhotos = e => {
-    e.preventDefault();
-    setQuery(queryInput.current.value);
-  };
-  
-  return (
-    <div className="box">
-      <h2>{props.emoji}</h2>
-      <h1>{props.name}'s website</h1>
-      <div className="grid">
-      { query ?
-          photos.map(photo => {
-          return (
-            <div key={photo.id} className="item">
-              <img
-                className="img"
-                src={photo.urls.regular}
-              />
-              <div className="caption">
-                <span className="credits">Photo by 
-                  <a href={photo.user.links.html + utm}>   {photo.user.name} 
-                  </a>
-                  <span> on </span> 
-                  <a href={"https://unsplash.com" + utm}>
-                    Unsplash
-                  </a>
-                </span>
-              </div>
-            </div>
-            );
-        }) : ""}
-      </div>
-    </div>
-  );
-};
 
-// CHALLENGE: add your own name and emoji to the website
-ReactDOM.render(<App name="Per" emoji="🎉"/>, document.getElementById("root"));

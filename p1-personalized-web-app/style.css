@@ -1,73 +1,76 @@
 :root {
-    --wooden: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/wooden.jpg);
-    --forest: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Horror/forest.jpg);
-    --sweets: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/sweets1.jpg);
-    --bubbles: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Cute/bubbles.jpg);
-    --crackle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/crackle.jpg);
-    --sparkle: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Minimalist/sparkle.jpg);
-    --rainbow: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-paint.jpg);
-    --smoke: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Rainbow/rainbow-smoke.jpg);
-    --nightsky: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/nightsky.jpg);
-    --sunset: url(https://scrimba.ams3.digitaloceanspaces.com/assets/courses/gdegree/Sleek/sunset.jpg);
-
+    --superhero: 'Bangers', cursive;
+    --fantasy: 'MedievalSharp', cursive;
+    --space: 'Orbitron', sans-serif;
+    --military: 'Black Ops One', cursive;
+    --romantic: 'La Belle Aurore', cursive;
+    --scary: 'Creepster', cursive;
+    --cowboy: 'Rye', cursive;
+    --regular: sans-serif;
+    --fantasy: 'MedievalSharp', cursive;
+    --font: var(--regular);
+    --sharp: 0;
+    --soft: 10px;
+    --round: 100px;
     
-    /* COLORS */
-    --blood: #8a0303;
-    --slime: #228B22;
-    --gloom: #2B363B;
-    --candy: #ee698e;
-    --purple: #7B1E7A;
-    --blue: #2176AE;
-    --olive: #A6C48A;    
-    --royal: #0A1045;
-    --lilac: #B8AED6;
-    --snow: #f4f9e9;
+    --image: var(--soft);
     
-    /* FONTS */
-    --scary-font: 'Metal Mania';
-    --typewriter-font: 'Inconsolata';
-    --funny-font: 'Balsamiq Sans';
-    --curly-font: 'Pacifico';
-    --old-style-font: 'Cinzel';
-    --simple-font: 'Noto Sans HK';
-    --funky-font: 'MuseoModerno';
-    --sweet-font: 'Lobster';
+    --background: #f5f5f5;
+    --text: #222222;
+    
+    --light: var(--background);
+    --dark: var(--text);
 }
 
 
-body {
-
-    /*
-    CHALLENGE: change the background to one you like
-    */
-    
-    --background-image: var(--wooden);
-    
-    /*
-    CHALLENGE: change the main color to one you like!
-    */
-    --main-color: var(--snow);
-    
-     /* 
-    CHALLENGE: change the font to one you think is cool
-    */
-    font-family: var(--simple-font);
+body, html {
+    margin: 0;
+    padding: 10px;
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font);
 }
 
-
-.grid {
-    /* 
-    BONUS CHALLENGE: adjust how many columns you'd like to have
-    */
-   column-count: 2;
-   column-gap: 10px;
+img {
+    width: 30%;
+    border-radius: calc(var(--image) * 2);
+    border: 4px solid var(--text);
 }
 
-
-.img {
-    /* 
-    border-image: var(--sweets) 100;
-    */
-
+a {
+    color: var(--text);
 }
 
+input {
+    display: block;
+    margin: 20px 0 0;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    border-width: 1px; 
+    border-style: solid;
+    border-color:  var(--text);
+    color: var(--text);
+    background: none;
+    border-radius: var(--image);
+    font-family: var(--font);
+}
+
+::placeholder {
+    color: var(--text);
+}
+
+button {
+    border-radius: var(--image);
+    padding: 5px 10px;
+    border: none;
+    background: var(--text);
+    color: var(--background);
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    font-family: var(--font);
+    width: 160px;
+}
