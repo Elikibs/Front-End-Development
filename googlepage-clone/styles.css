@@ -1,9 +1,11 @@
-img {
+.main {
     margin-top: 100px;
+}
+.main-img {
     width: 300px;
     display: block;
 }
-input {
+.search-input {
     width: 400px;
     display: block;
 }
