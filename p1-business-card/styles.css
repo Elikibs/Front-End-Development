@@ -1,5 +1,7 @@
 body {
     margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .avatar {
     width: 150px;
@@ -12,8 +14,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-}
-.dotted-border {
-    border: 1px dotted blue;
+    border-bottom: 10px solid #0C2D57;
+    background: #FC6736;
+    color: whitesmoke;;
 }
