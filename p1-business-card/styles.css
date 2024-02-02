@@ -1,6 +1,7 @@
 body {
     margin: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(images/businesscardbg.jpg);
 
 }
 .avatar {
@@ -11,10 +12,10 @@ body {
     display: flex;
     justify-content: space-around;
     width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 300px auto 0 auto;
     text-align: center;
     border-bottom: 10px solid #0C2D57;
     background: #FC6736;
-    color: whitesmoke;;
+    color: whitesmoke;
+    border-radius: 5px;
 }
