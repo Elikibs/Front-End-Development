@@ -9,4 +9,5 @@ body {
     padding: 6px 10px;
     background: white;
     border: none;
+    font-family: inherit;
 }
