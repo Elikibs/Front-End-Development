@@ -12,3 +12,6 @@ body {
     /* inheriting fonts */
     font-family: inherit;
 }
+.cta {
+    text-decoration: underline;
+}
