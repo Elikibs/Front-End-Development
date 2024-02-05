@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: #82a5ca;
     background-image: url(images/galaxy.gif);
     background-size: cover;
     text-align: center;
@@ -11,6 +11,8 @@ body {
     border: none;
     /* inheriting fonts */
     font-family: inherit;
+    color: #82a5ca;
+    font-weight: bold;
 }
 .underline {
     text-decoration: underline;
