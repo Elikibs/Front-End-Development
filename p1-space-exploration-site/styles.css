@@ -15,3 +15,7 @@ body {
 .underline {
     text-decoration: underline;
 }
+#main-logo {
+    width: 200px;
+    
+}
