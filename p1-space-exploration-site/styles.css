@@ -4,6 +4,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     margin:0;
 }
+/* hero-section styling */
 .hero-section {
     background-image: url(images/galaxy.gif);
     background-size: cover;
