@@ -26,10 +26,29 @@ h1, h2, h3, h4, p{
     background: #00292c;
     color: whitesmoke;
     width: 50%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#gif-giftimage {
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDdicHY3bzc1cnR0Mzl5M2x0aXVnYnN6MjhnY2hoMHk1azVxaHBpYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/79b1RJJWOMsYqjX3Cg/giphy.gif");
+}
+#gif-giftimage:hover {
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHljYnFobnJnenFxMXc3cWNpNzh1MGFwZjhndHVnMDVlb3RkN2l5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DhstvI3zZ598Nb1rFf/giphy-downsized-large.gif");
+}
+#gif-peepsimage {
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDdicHY3bzc1cnR0Mzl5M2x0aXVnYnN6MjhnY2hoMHk1azVxaHBpYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/79b1RJJWOMsYqjX3Cg/giphy.gif");
+}
+#gif-peepsimage:hover {
+    background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjhpdzFmb3IwbnZudDlqOGt3YXBwY3RzMjRvcDBqOXQ5ejU0YnZiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YnBntKOgnUSBkV7bQH/giphy.gif");
 }
