@@ -5,10 +5,10 @@ body {
 .main {
     background: #00292c;
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     padding: 20px;
     width: 50%;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,4 +21,15 @@ body {
 }
 h1, h2, h3, h4, p{
     text-shadow: 0px 0px 1px black;
+}
+.gif-sec {
+    background: #00292c;
+    color: whitesmoke;
+    width: 50%;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
