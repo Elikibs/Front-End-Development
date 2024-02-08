@@ -41,6 +41,7 @@ h1, h2, h3, h4, p{
     border-radius: 10px;
     background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDdicHY3bzc1cnR0Mzl5M2x0aXVnYnN6MjhnY2hoMHk1azVxaHBpYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/79b1RJJWOMsYqjX3Cg/giphy.gif");
 }
+/* hover effect */
 #gif-giftimage:hover {
     background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHljYnFobnJnenFxMXc3cWNpNzh1MGFwZjhndHVnMDVlb3RkN2l5eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DhstvI3zZ598Nb1rFf/giphy-downsized-large.gif");
 }
