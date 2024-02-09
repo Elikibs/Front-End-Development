@@ -56,3 +56,10 @@ h1, h2, h3, h4, p{
 #gif-peepsimage:hover {
     background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjhpdzFmb3IwbnZudDlqOGt3YXBwY3RzMjRvcDBqOXQ5ejU0YnZiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YnBntKOgnUSBkV7bQH/giphy.gif");
 }
+footer {
+    background: #00292c;
+    color: whitesmoke;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+}
