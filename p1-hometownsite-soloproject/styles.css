@@ -13,8 +13,9 @@ body {
     background: #e5e1cf;
     padding: 50px;
 }
-h3 {
+.place-title {
     margin-bottom: 50px;
+    font-size: 30px;
 }
 .place-section {
     display: flex;
@@ -30,4 +31,17 @@ h3 {
 .place-text {
     max-width: 400px;
     line-height: 25px;
+}
+.guide {
+    background-color: #DCCAA7;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.guide-desc {
+    max-width: 400px;
+    margin: 40px 30px 0 30px;
+}
+p{
+    font-size: 19px;
 }
