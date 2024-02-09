@@ -63,4 +63,9 @@ footer {
     padding: 20px;
     margin: 0 auto 30px auto;
     border-radius: 0 0 10px 10px;
+    text-align: center;
+    font-style: italic;
+}
+a {
+    color: white;
 }
