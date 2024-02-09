@@ -3,20 +3,31 @@ body {
     text-align: center;
 
 }
-img{
-    width: 400px;
-}
 .hero {
-    background-image: url(images/nairobi-bg.jpg);
+    background-image: url(images/nairobi-bg2.jpg);
     background-size: cover;
+    padding: 200px;
+    color: #e5e1cf;
+}
+.places {
+    background: #e5e1cf;
     padding: 50px;
-    height: 835px;
 }
-.hero-text{
-    max-width: 900px;
-    margin: 150px auto 0 auto;
-    font-size: large;
-}
-h1 {
+h3 {
     margin-bottom: 50px;
+}
+.place-section {
+    display: flex;
+    justify-content: space-around;
+}
+.place-image {
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+.place-image:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+}
+.place-text {
+    max-width: 400px;
+    line-height: 25px;
 }
