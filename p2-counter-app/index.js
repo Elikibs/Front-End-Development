@@ -9,3 +9,7 @@ function increment() {
     count += 1
     countId.innerText = count
 }
+
+function save() {
+    console.log(count);
+}
