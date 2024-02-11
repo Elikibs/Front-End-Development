@@ -14,7 +14,7 @@ body {
 h3 {
     color: white;
 }
-#points-text {
+.points-text {
     background: black;
     color: red;
     font-family: 'Cursed Timer ULiL', sans-serif;
