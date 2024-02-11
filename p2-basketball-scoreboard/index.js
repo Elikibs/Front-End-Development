@@ -24,13 +24,13 @@ function addThreeHomePoints() {
 }
 function addOneGuestPoint() {
     defaultGuestPoints += 1
-    homePoints.textContent = defaultGuestPoints
+    guestPoints.textContent = defaultGuestPoints
 }
 function addTwoGuestPoints() {
     defaultGuestPoints += 1
-    homePoints.textContent = defaultGuestPoints
+    guestPoints.textContent = defaultGuestPoints
 }
 function addThreeGuestPoints() {
     defaultGuestPoints += 3
-    homePoints.textContent = defaultGuestPoints
+    guestPoints.textContent = defaultGuestPoints
 }
