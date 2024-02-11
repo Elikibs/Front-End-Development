@@ -29,19 +29,7 @@ h3 {
 .add-points {
     margin-top: 20px;
 }
-#add-points-btn1 {
-    background: #1B244A;
-    border: 1px solid #9AABD8;
-    border-radius: 3px;
-    color: #9AABD8;
-}
-#add-points-btn2 {
-    background: #1B244A;
-    border: 1px solid #9AABD8;
-    border-radius: 3px;
-    color: #9AABD8;
-}
-#add-points-btn3 {
+.add-points-btn {
     background: #1B244A;
     border: 1px solid #9AABD8;
     border-radius: 3px;
