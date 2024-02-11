@@ -6,6 +6,7 @@ let addGuestButton2 = document.getElementById("add-guestpoints-btn2")
 let addGuestButton3 = document.getElementById("add-guestpoints-btn3")
 let homePoints = document.getElementById("home-points")
 let guestPoints = document.getElementById("guest-points")
+let startGameEl = document.getElementById("start-game-btn")
 
 let defaultHomePoints = 0
 let defaultGuestPoints = 0
@@ -32,5 +33,11 @@ function addTwoGuestPoints() {
 }
 function addThreeGuestPoints() {
     defaultGuestPoints += 3
+    guestPoints.textContent = defaultGuestPoints
+}
+function startGame(){
+    defaultHomePoints = 0
+    defaultGuestPoints = 0
+    homePoints.textContent = defaultHomePoints
     guestPoints.textContent = defaultGuestPoints
 }

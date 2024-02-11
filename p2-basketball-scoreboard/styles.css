@@ -41,7 +41,7 @@ h3 {
     color: #9AABD8;
     font-family: 'Cursed Timer ULiL', sans-serif;
 }
-.end-btn {
+#start-game-btn {
     margin: 20px;
     padding: 8px;
 }
