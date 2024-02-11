@@ -1,1 +1,2 @@
-Site url; [text](https://basketballscoresboard.netlify.app/)
+## Site URL
+[Check out the deployed site here!](https://basketballscoresboard.netlify.app/)
