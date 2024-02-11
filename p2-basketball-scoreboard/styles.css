@@ -13,6 +13,9 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.bottom-container {
+    margin-top: 20px;
+}
 h3 {
     color: white;
 }
@@ -36,4 +39,9 @@ h3 {
     border: 1px solid #9AABD8;
     border-radius: 3px;
     color: #9AABD8;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+.end-btn {
+    margin: 20px;
+    padding: 8px;
 }
