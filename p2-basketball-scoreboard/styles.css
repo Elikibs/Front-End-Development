@@ -44,4 +44,5 @@ h3 {
 #start-game-btn {
     margin: 20px;
     padding: 8px;
+    border-radius: 5px;
 }
