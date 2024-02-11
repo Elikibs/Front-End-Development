@@ -11,9 +11,6 @@ body {
     display: flex;
     justify-content: space-around;
 }
-.home {
-    text-align: center;
-}
 h3 {
     color: white;
 }
@@ -32,7 +29,19 @@ h3 {
 .add-points {
     margin-top: 20px;
 }
-.add-points-btn {
+#add-points-btn1 {
+    background: #1B244A;
+    border: 1px solid #9AABD8;
+    border-radius: 3px;
+    color: #9AABD8;
+}
+#add-points-btn2 {
+    background: #1B244A;
+    border: 1px solid #9AABD8;
+    border-radius: 3px;
+    color: #9AABD8;
+}
+#add-points-btn3 {
     background: #1B244A;
     border: 1px solid #9AABD8;
     border-radius: 3px;
