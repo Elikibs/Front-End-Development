@@ -1,5 +1,5 @@
 let firstCard = 5
-let secondCard = 5
+let secondCard = 20
 let sum = firstCard + secondCard
 let hasBlackjack = false
 let isAlive = true
@@ -16,3 +16,4 @@ else{
     message = "You're out of the game!"
     isAlive = false
 }
+console.log(message);
