@@ -22,3 +22,9 @@ p {
 #message-el {
     font-style: italic;
 }
+#start-game-btn {
+    background: goldenrod;
+    width: 150px;
+    color: #016f32;
+    padding: 10px;
+}
