@@ -10,7 +10,8 @@
     <div class="container">
         <h2>Generate a <span class="h2-nextline">random password</span></h2>
         <p class="supporting-text">Never use an insecure password again</p>
-        <button id="generatepass-el">Generate password</button>
+        <input type="number" id="password-length" placeholder="Enter password length">
+        <button id="generatepass-el" onclick="populatePass()">Generate password</button>
         <hr>
         <div class="passwords-section">
             <p class="password-bg" id="firstpass-el"></p>

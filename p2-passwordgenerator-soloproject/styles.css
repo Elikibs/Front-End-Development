@@ -11,6 +11,17 @@ body {
     margin-top: 100px;
     padding: 20px 5px 20px 100px;
 }
+#password-length {
+    background: white;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    width: 150px;
+    margin-right: 5px;
+    margin-top: 0;
+    height: 15px;
+
+}
 button {
     background: #10B981;
     color: white;
@@ -35,8 +46,9 @@ hr{
 .password-bg {
     background: #2F3E53;
     border-radius: 2px;
-    width: 200px;
-    height: 30px;
     margin-right: 50px;
-    padding: 2px 30px;
+    padding: 5px 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #10B981;
 }
