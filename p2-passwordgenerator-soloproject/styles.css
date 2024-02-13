@@ -9,7 +9,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
-    padding: 20px 5px 20px 100px;
+    padding: 20px 50px 20px 50px;
 }
 #password-length {
     background: white;
@@ -39,6 +39,8 @@ button {
 }
 hr{
     border: 1px solid #2F3E53;
+    width: 368px;
+    margin-left: 0;
 }
 .passwords-section {
     display: flex;
