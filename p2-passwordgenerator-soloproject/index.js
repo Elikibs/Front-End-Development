@@ -2,3 +2,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 "/"];
 
 
+let generatepassEl = document.getElementById("generatepass-el")
+let firstpassEl = document.getElementById("firstpass-el")
+let secondpassEl = document.getElementById("secondpass-el")
