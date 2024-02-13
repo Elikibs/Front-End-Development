@@ -35,6 +35,8 @@ hr{
 .password-bg {
     background: #2F3E53;
     border-radius: 2px;
+    width: 200px;
+    height: 30px;
     margin-right: 50px;
     padding: 2px 30px;
 }
